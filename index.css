@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: linear-gradient(135deg,rgb(10, 68, 104),rgb(6, 10, 80));
+}
+.container{
+    width: 100%;
+    height:100vh;
+display: flex;
+justify-content: center;
+/* align-items: center; */
+align-items: flex-start;
+margin-top: 15vh;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.985);
+    width: 60%;
+    height: fit-content;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    
+}
+.form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5vh;
+    flex-direction: column;
+position: relative;
+width: 100%;
+height: 100%;
+margin-top: 3vh;
+/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
+}
+#logo{
+    position: absolute;
+    top: -57px;
+    background-color: rgb(254, 249, 249);
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-group input,.input-group textarea{
+    width: 22vw;
+    padding: 7px;
+    /* height:8vh ; */
+    border-radius: 8px;
+    border: 3px solid black;
+    margin-left: 2vw;
+    font-size: 18px;
+    flex-basis: 48%;
+    background: transparent;
+
+
+}
+.input-group label{
+    font-size: 22px;
+    font-weight: bold;
+   flex-basis: 18%;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+#sumbit{
+
+    padding: 15px;
+    font-size: 25px;
+    border-radius:8px ; 
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#sumbit:hover{
+    background-color: rgb(26, 26, 104);
+    color: white;
+}
+.input-group span{
+    flex-basis: 16%;
+    margin-left: 2vw;
+  
+    font-size: 16px;
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    display: none;
+    align-items: center;
+}
+.input-group span i{
+    flex-basis: 2%;
+}
+#fixerror{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media(max-width:457px){
+    .form{
+        width: 80%;
+        padding: 5px;
+    }
+   
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM-VALIDATION</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form id="myform">
+          <i class="fa-solid fa-paper-plane f" id="logo"></i>
+          <div class="input-group">
+            <label for="name">FULL NAME :</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name here"
+              onkeyup="validateName()"
+            />
+            <span id="name-error"><i class="fa-solid fa-exclamation"></i></span>
+          </div>
+          <div class="input-group">
+            <label for="number">PHONE NO:</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="+91"
+              min="0"
+              maxlength="10"
+              onkeyup="validateNumber()"
+            />
+            <span id="phone-error"><i class="fa-solid fa-exclamation"></i>10 digit number is required</span>
+
+          </div>
+          <div class="input-group">
+            <label for="email">EMAIL-ID :</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Enter your Email here"
+              onkeyup="validateMail()"
+            />
+            <span id="email-error"><i class="fa-solid fa-exclamation"></i>email is required</span>
+
+          </div>
+          <div class="input-group">
+            <label for="msg" name>YOUR MESSAGE :</label>
+            <textarea
+              name="msg"
+              id="msg"
+              placeholder="Enter Your Message here "
+              onkeyup="validateMsg()"
+            ></textarea>
+            <span id="msg-error"><i class="fa-solid fa-exclamation"></i>message is required</span>
+
+          </div>
+          <button id="sumbit" onclick="return validateForm()">Sumbit</button>
+<span id="fixerror"><i class="fa-solid fa-exclamation"></i></span>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8c9b0ad18f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
